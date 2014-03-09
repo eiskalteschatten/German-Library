@@ -25,14 +25,4 @@
     [_tabView selectTabViewItemAtIndex:clickedSegment];
 }
 
-- (void)webView:(WebView *)sender didStartProvisonalLoadForFrame:(WebFrame *)frame {
-    NSLog(@"started loading");
-    [_progressIndicator startAnimation: self];
-}
-
-- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
-    NSLog(@"finished loading");
-    [_progressIndicator stopAnimation: self];
-}
-
 @end

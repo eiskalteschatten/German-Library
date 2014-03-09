@@ -332,7 +332,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="German Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+        <window title="German Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -359,6 +359,7 @@
                                                 <nil key="identifier"/>
                                             </webPreferences>
                                             <connections>
+                                                <outlet property="frameLoadDelegate" destination="bob-B0-qDG" id="PuN-pl-1iS"/>
                                                 <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="bKp-RW-Qf9"/>
                                             </connections>
                                         </webView>
@@ -373,7 +374,7 @@
                             </tabViewItem>
                             <tabViewItem label="dict.cc" identifier="" id="7ip-dm-R23">
                                 <view key="view" id="8RE-b0-31b">
-                                    <rect key="frame" x="10" y="33" width="474" height="310"/>
+                                    <rect key="frame" x="10" y="33" width="411" height="282"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-a1-DM1">
@@ -382,6 +383,9 @@
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
+                                            <connections>
+                                                <outlet property="frameLoadDelegate" destination="EzI-Xz-h5d" id="NpC-FZ-eRF"/>
+                                            </connections>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -403,6 +407,9 @@
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
+                                            <connections>
+                                                <outlet property="frameLoadDelegate" destination="R1N-R4-oQl" id="Uim-fD-a6x"/>
+                                            </connections>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -415,7 +422,7 @@
                             </tabViewItem>
                             <tabViewItem label="Duden" identifier="" id="WnL-BM-6cQ">
                                 <view key="view" id="KIe-iR-dzU">
-                                    <rect key="frame" x="0.0" y="0.0" width="417" height="312"/>
+                                    <rect key="frame" x="10" y="33" width="411" height="282"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-8B-Jr4">
@@ -424,6 +431,9 @@
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
+                                            <connections>
+                                                <outlet property="frameLoadDelegate" destination="jFD-am-FX8" id="k3v-MS-CAL"/>
+                                            </connections>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -478,8 +488,29 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </progressIndicator>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="C9C585B4-DF32-4E05-BC82-5976B88F1129" label="Back and Forward" paletteLabel="Back and Forward" id="Y5K-KL-3wN">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="42" height="26"/>
+                        <size key="maxSize" width="104" height="28"/>
+                        <segmentedControl key="view" verticalHuggingPriority="750" id="eFF-dc-JeZ">
+                            <rect key="frame" x="24" y="14" width="54" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="i3U-QX-GoC">
+                                <font key="font" metaFont="system"/>
+                                <segments>
+                                    <segment image="NSGoLeftTemplate" width="24" enabled="NO">
+                                        <nil key="label"/>
+                                    </segment>
+                                    <segment image="NSGoRightTemplate" width="23" enabled="NO" tag="1">
+                                        <nil key="label"/>
+                                    </segment>
+                                </segments>
+                            </segmentedCell>
+                        </segmentedControl>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
+                    <toolbarItem reference="Y5K-KL-3wN"/>
                     <toolbarItem reference="av8-gY-ao6"/>
                     <toolbarItem reference="tLE-FV-Mxa"/>
                     <toolbarItem reference="av8-gY-ao6"/>
@@ -489,15 +520,44 @@
         </window>
         <customObject id="494" customClass="AppDelegate">
             <connections>
+                <outlet property="backForward" destination="eFF-dc-JeZ" id="yx3-yP-CdQ"/>
                 <outlet property="canooView" destination="9bR-bz-4U4" id="7mR-X9-psG"/>
                 <outlet property="dictView" destination="qVn-a1-DM1" id="T5U-e9-lJt"/>
                 <outlet property="dudenView" destination="jgT-8B-Jr4" id="qwU-qd-Jd1"/>
                 <outlet property="leoView" destination="E5X-Fq-Lz4" id="eTo-oC-Kq6"/>
-                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="Hy8-sR-InX"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="4G3-aS-toc"/>
                 <outlet property="tabView" destination="XqY-9p-FEz" id="nhA-zY-GPM"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <viewController id="bob-B0-qDG" customClass="LeoViewController">
+            <connections>
+                <outlet property="backForward" destination="eFF-dc-JeZ" id="nfx-EA-tIp"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="1Hu-SD-oAI"/>
+            </connections>
+        </viewController>
+        <viewController id="EzI-Xz-h5d" customClass="DictViewController">
+            <connections>
+                <outlet property="backForward" destination="eFF-dc-JeZ" id="nsD-mJ-FOv"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="4tK-it-byx"/>
+            </connections>
+        </viewController>
+        <viewController id="R1N-R4-oQl" customClass="CanooViewController">
+            <connections>
+                <outlet property="backForward" destination="eFF-dc-JeZ" id="PUk-Gv-LJP"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="XfF-SQ-xRY"/>
+            </connections>
+        </viewController>
+        <viewController id="jFD-am-FX8" customClass="DudenViewController">
+            <connections>
+                <outlet property="backForward" destination="eFF-dc-JeZ" id="6h1-dV-H7X"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="7c1-90-0lt"/>
+            </connections>
+        </viewController>
     </objects>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="9"/>
+        <image name="NSGoRightTemplate" width="9" height="9"/>
+    </resources>
 </document>

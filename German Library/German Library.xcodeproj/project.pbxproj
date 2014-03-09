@@ -19,6 +19,10 @@
 		9338C4A418CCB17400AE3FEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9338C4A218CCB17400AE3FEA /* InfoPlist.strings */; };
 		9338C4A618CCB17400AE3FEA /* German_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338C4A518CCB17400AE3FEA /* German_LibraryTests.m */; };
 		9338C4B018CCB2AE00AE3FEA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */; };
+		936A6F5418CCDCC0002D0EC7 /* LeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */; };
+		936A6F5718CCDD89002D0EC7 /* DictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5618CCDD89002D0EC7 /* DictViewController.m */; };
+		936A6F5A18CCDDC0002D0EC7 /* CanooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5918CCDDC0002D0EC7 /* CanooViewController.m */; };
+		936A6F5D18CCDDDB002D0EC7 /* DudenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5C18CCDDDB002D0EC7 /* DudenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,14 @@
 		9338C4A318CCB17400AE3FEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9338C4A518CCB17400AE3FEA /* German_LibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = German_LibraryTests.m; sourceTree = "<group>"; };
 		9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		936A6F5218CCDCC0002D0EC7 /* LeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeoViewController.h; sourceTree = "<group>"; };
+		936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeoViewController.m; sourceTree = "<group>"; };
+		936A6F5518CCDD89002D0EC7 /* DictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictViewController.h; sourceTree = "<group>"; };
+		936A6F5618CCDD89002D0EC7 /* DictViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictViewController.m; sourceTree = "<group>"; };
+		936A6F5818CCDDC0002D0EC7 /* CanooViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanooViewController.h; sourceTree = "<group>"; };
+		936A6F5918CCDDC0002D0EC7 /* CanooViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanooViewController.m; sourceTree = "<group>"; };
+		936A6F5B18CCDDDB002D0EC7 /* DudenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DudenViewController.h; sourceTree = "<group>"; };
+		936A6F5C18CCDDDB002D0EC7 /* DudenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DudenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,14 @@
 			children = (
 				9338C48D18CCB17400AE3FEA /* AppDelegate.h */,
 				9338C48E18CCB17400AE3FEA /* AppDelegate.m */,
+				936A6F5218CCDCC0002D0EC7 /* LeoViewController.h */,
+				936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */,
+				936A6F5518CCDD89002D0EC7 /* DictViewController.h */,
+				936A6F5618CCDD89002D0EC7 /* DictViewController.m */,
+				936A6F5818CCDDC0002D0EC7 /* CanooViewController.h */,
+				936A6F5918CCDDC0002D0EC7 /* CanooViewController.m */,
+				936A6F5B18CCDDDB002D0EC7 /* DudenViewController.h */,
+				936A6F5C18CCDDDB002D0EC7 /* DudenViewController.m */,
 				9338C49018CCB17400AE3FEA /* MainMenu.xib */,
 				9338C49318CCB17400AE3FEA /* Images.xcassets */,
 				9338C48218CCB17400AE3FEA /* Supporting Files */,
@@ -256,7 +276,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936A6F5418CCDCC0002D0EC7 /* LeoViewController.m in Sources */,
+				936A6F5A18CCDDC0002D0EC7 /* CanooViewController.m in Sources */,
 				9338C48F18CCB17400AE3FEA /* AppDelegate.m in Sources */,
+				936A6F5D18CCDDDB002D0EC7 /* DudenViewController.m in Sources */,
+				936A6F5718CCDD89002D0EC7 /* DictViewController.m in Sources */,
 				9338C48818CCB17400AE3FEA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

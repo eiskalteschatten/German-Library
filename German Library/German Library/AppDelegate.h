@@ -13,6 +13,8 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTabView *tabView;
+
+@property (assign) IBOutlet NSSegmentedControl *backForward;
 @property (assign) IBOutlet NSProgressIndicator *progressIndicator;
 
 @property (assign) IBOutlet WebView *leoView;
