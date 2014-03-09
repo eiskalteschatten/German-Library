@@ -29,6 +29,20 @@
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
     [_progressIndicator stopAnimation: self];
+    
+    if ([sender canGoBack]) {
+        [_backForward setEnabled:true forSegment:0];
+    }
+    else {
+        [_backForward setEnabled:false forSegment:0];
+    }
+    
+    if ([sender canGoForward]) {
+        [_backForward setEnabled:true forSegment:1];
+    }
+    else {
+        [_backForward setEnabled:false forSegment:1];
+    }
 }
 
 @end

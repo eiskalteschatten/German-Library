@@ -22,6 +22,10 @@
 @property (assign) IBOutlet WebView *canooView;
 @property (assign) IBOutlet WebView *dudenView;
 
+@property (assign) NSInteger clickedSegment;
+@property (assign) NSMutableArray *webViews;
+
 - (IBAction)switchTab:(id)sender;
+- (IBAction)goBackForward:(id)sender;
 
 @end

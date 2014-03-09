@@ -343,7 +343,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView misplaced="YES" type="noTabsNoBorder" initialItem="Oy3-DI-ARC" translatesAutoresizingMaskIntoConstraints="NO" id="XqY-9p-FEz">
-                        <rect key="frame" x="25" y="26" width="431" height="328"/>
+                        <rect key="frame" x="32" y="36" width="417" height="312"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
@@ -506,6 +506,9 @@
                                     </segment>
                                 </segments>
                             </segmentedCell>
+                            <connections>
+                                <action selector="goBackForward:" target="494" id="oxs-Pa-j5A"/>
+                            </connections>
                         </segmentedControl>
                     </toolbarItem>
                 </allowedToolbarItems>
