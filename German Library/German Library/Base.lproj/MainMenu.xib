@@ -343,7 +343,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView misplaced="YES" type="noTabsNoBorder" initialItem="Oy3-DI-ARC" translatesAutoresizingMaskIntoConstraints="NO" id="XqY-9p-FEz">
-                        <rect key="frame" x="32" y="36" width="417" height="312"/>
+                        <rect key="frame" x="25" y="26" width="431" height="328"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
@@ -355,7 +355,7 @@
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-Fq-Lz4">
                                             <rect key="frame" x="61" y="54" width="308" height="262"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
                                             <connections>
@@ -380,7 +380,7 @@
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-a1-DM1">
                                             <rect key="frame" x="83" y="92" width="285" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
                                             <connections>
@@ -396,7 +396,7 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="Canoo.net" identifier="2" id="s9g-cc-oEL">
+                            <tabViewItem label="canoonet" identifier="2" id="s9g-cc-oEL">
                                 <view key="view" id="g8G-pY-srN">
                                     <rect key="frame" x="10" y="33" width="411" height="282"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,7 +404,7 @@
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-bz-4U4">
                                             <rect key="frame" x="14" y="47" width="389" height="245"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
                                             <connections>
@@ -428,7 +428,7 @@
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-8B-Jr4">
                                             <rect key="frame" x="65" y="47" width="346" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
                                             <connections>
@@ -463,14 +463,14 @@
                         <size key="minSize" width="104" height="28"/>
                         <size key="maxSize" width="285" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="Xi5-nd-ovX">
-                            <rect key="frame" x="0.0" y="14" width="261" height="28"/>
+                            <rect key="frame" x="0.0" y="14" width="254" height="28"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="selectOne" id="tmu-RU-X7r">
                                 <font key="font" metaFont="system"/>
                                 <segments>
                                     <segment label="LEO" selected="YES"/>
                                     <segment label="dict.cc" tag="1"/>
-                                    <segment label="Canoo.net"/>
+                                    <segment label="canoonet"/>
                                     <segment label="Duden"/>
                                 </segments>
                             </segmentedCell>
@@ -516,7 +516,9 @@
                     <toolbarItem reference="Y5K-KL-3wN"/>
                     <toolbarItem reference="av8-gY-ao6"/>
                     <toolbarItem reference="tLE-FV-Mxa"/>
+                    <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="av8-gY-ao6"/>
+                    <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="yS8-ul-Grs"/>
                 </defaultToolbarItems>
             </toolbar>
