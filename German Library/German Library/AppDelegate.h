@@ -13,6 +13,7 @@
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTabView *tabView;
+@property (assign) IBOutlet NSProgressIndicator *progressIndicator;
 
 @property (assign) IBOutlet WebView *leoView;
 @property (assign) IBOutlet WebView *dictView;

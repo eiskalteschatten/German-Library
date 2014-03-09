@@ -349,7 +349,7 @@
                         <tabViewItems>
                             <tabViewItem label="LEO" identifier="1" id="Oy3-DI-ARC">
                                 <view key="view" id="CPF-SZ-8Ox">
-                                    <rect key="frame" x="10" y="33" width="411" height="282"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="417" height="312"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-Fq-Lz4">
@@ -358,6 +358,9 @@
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
                                             </webPreferences>
+                                            <connections>
+                                                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="bKp-RW-Qf9"/>
+                                            </connections>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -376,7 +379,9 @@
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-a1-DM1">
                                             <rect key="frame" x="83" y="92" width="285" height="197"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO"/>
+                                            <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
+                                                <nil key="identifier"/>
+                                            </webPreferences>
                                         </webView>
                                     </subviews>
                                     <constraints>
@@ -393,7 +398,7 @@
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-bz-4U4">
-                                            <rect key="frame" x="44" y="50" width="389" height="245"/>
+                                            <rect key="frame" x="14" y="47" width="389" height="245"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
@@ -464,11 +469,21 @@
                             <action selector="switchTab:" target="494" id="1vO-E3-uTA"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="5B1A245C-632F-44F9-96AF-94B084CCFF81" label="Loading" paletteLabel="Loading" tag="-1" id="yS8-ul-Grs">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="16" height="16"/>
+                        <size key="maxSize" width="16" height="16"/>
+                        <progressIndicator key="view" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" displayedWhenStopped="NO" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" id="LR0-ev-w2Z">
+                            <rect key="frame" x="17" y="14" width="16" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </progressIndicator>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="av8-gY-ao6"/>
                     <toolbarItem reference="tLE-FV-Mxa"/>
                     <toolbarItem reference="av8-gY-ao6"/>
+                    <toolbarItem reference="yS8-ul-Grs"/>
                 </defaultToolbarItems>
             </toolbar>
         </window>
@@ -478,6 +493,7 @@
                 <outlet property="dictView" destination="qVn-a1-DM1" id="T5U-e9-lJt"/>
                 <outlet property="dudenView" destination="jgT-8B-Jr4" id="qwU-qd-Jd1"/>
                 <outlet property="leoView" destination="E5X-Fq-Lz4" id="eTo-oC-Kq6"/>
+                <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="Hy8-sR-InX"/>
                 <outlet property="tabView" destination="XqY-9p-FEz" id="nhA-zY-GPM"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
