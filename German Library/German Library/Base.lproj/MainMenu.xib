@@ -332,7 +332,7 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="German Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" animationBehavior="default" id="371">
+        <window title="German Library" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" frameAutosaveName="mainwindow" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -349,7 +349,7 @@
                         <tabViewItems>
                             <tabViewItem label="LEO" identifier="1" id="Oy3-DI-ARC">
                                 <view key="view" id="CPF-SZ-8Ox">
-                                    <rect key="frame" x="0.0" y="0.0" width="417" height="312"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-Fq-Lz4">
