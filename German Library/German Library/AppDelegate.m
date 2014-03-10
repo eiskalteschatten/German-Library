@@ -30,6 +30,9 @@
     
     webViews = [[NSMutableArray alloc] init];
     [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, nil]];
+    
+    NSString *path = [self pathToNotes];
+    [_notePad readRTFDFromFile:path];
 }
 
 - (IBAction)switchTab:(id)sender {
@@ -93,6 +96,21 @@
         
         [[openWebView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:searchUrl]]];
     }
+}
+
+- (NSString*)pathToNotes {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSString *folder2 = @"~/Library/Application Support/Germany Library/Notes/";
+    folder2 = [folder2 stringByExpandingTildeInPath];
+    
+    if ([fileManager fileExistsAtPath: folder2] == NO) {
+        [fileManager createDirectoryAtPath: folder2 withIntermediateDirectories: YES attributes: nil error: nil];
+    }
+    
+    folder2 = [folder2 stringByAppendingPathComponent:@"Notepad.rtfd"];
+    
+    return folder2;
 }
 
 @end

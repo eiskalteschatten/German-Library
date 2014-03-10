@@ -29,10 +29,13 @@
 @property (nonatomic,retain) NSMutableArray *searchUrls;
 @property (nonatomic,retain) NSMutableArray *webViews;
 
+@property (assign) IBOutlet NSTextView *notePad;
+
 - (IBAction)switchTab:(id)sender;
 - (IBAction)goBackForward:(id)sender;
 - (IBAction)stopPage:(id)sender;
 - (IBAction)reloadPage:(id)sender;
 - (IBAction)search:(id)sender;
+- (NSString*)pathToNotes;
 
 @end
