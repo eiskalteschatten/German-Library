@@ -86,7 +86,7 @@
 - (IBAction)search:(id)sender {
     NSString *search = [_searchField stringValue];
     
-    if (search != @"") {
+    if (![search  isEqual: @""]) {
         WebView *openWebView = [webViews objectAtIndex:_clickedSegment];
         NSString *searchUrl = [searchUrls objectAtIndex:_clickedSegment];
         searchUrl = [searchUrl stringByAppendingString:search];
