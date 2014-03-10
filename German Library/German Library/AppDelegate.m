@@ -12,7 +12,6 @@
 @synthesize webViews;
 @synthesize refNames;
 @synthesize searchUrls;
-@synthesize searchValues;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _clickedSegment = 0;
@@ -31,8 +30,6 @@
     
     webViews = [[NSMutableArray alloc] init];
     [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, nil]];
-    
-    searchValues = [[NSMutableArray alloc] initWithCapacity:4];
 }
 
 - (IBAction)switchTab:(id)sender {
@@ -59,10 +56,6 @@
     NSString *searchPlaceholder = @"Search ";
     searchPlaceholder = [searchPlaceholder stringByAppendingString:[refNames objectAtIndex:_clickedSegment]];
     [[_searchField cell] setPlaceholderString:searchPlaceholder];
-    
-    
-    //[searchValues insertObject:[_searchField stringValue] atIndex:_clickedSegment];
-    //[_searchField insertText:[searchValues objectAtIndex:_clickedSegment]];
 }
 
 - (IBAction)goBackForward:(id)sender {
@@ -91,11 +84,15 @@
 }
 
 - (IBAction)search:(id)sender {
-    WebView *openWebView = [webViews objectAtIndex:_clickedSegment];
-    NSString *searchUrl = [searchUrls objectAtIndex:_clickedSegment];
-    searchUrl = [searchUrl stringByAppendingString:[_searchField stringValue]];
+    NSString *search = [_searchField stringValue];
     
-    [[openWebView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:searchUrl]]];
+    if (search != @"") {
+        WebView *openWebView = [webViews objectAtIndex:_clickedSegment];
+        NSString *searchUrl = [searchUrls objectAtIndex:_clickedSegment];
+        searchUrl = [searchUrl stringByAppendingString:search];
+        
+        [[openWebView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:searchUrl]]];
+    }
 }
 
 @end

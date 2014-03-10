@@ -28,7 +28,6 @@
 @property (nonatomic,retain) NSMutableArray *refNames;
 @property (nonatomic,retain) NSMutableArray *searchUrls;
 @property (nonatomic,retain) NSMutableArray *webViews;
-@property (nonatomic,retain) NSMutableArray *searchValues;
 
 - (IBAction)switchTab:(id)sender;
 - (IBAction)goBackForward:(id)sender;
