@@ -810,7 +810,7 @@
                         <searchField key="view" verticalHuggingPriority="750" id="pnM-Cq-Jsv">
                             <rect key="frame" x="0.0" y="14" width="203" height="22"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search LEO" usesSingleLineMode="YES" bezelStyle="round" id="ZJ7-HX-JWt">
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search LEO" usesSingleLineMode="YES" bezelStyle="round" maximumRecents="15" id="ZJ7-HX-JWt">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -871,7 +871,7 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                         <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="QUb-lU-0y3">
-                            <rect key="frame" x="224" y="0.0" width="16" height="135"/>
+                            <rect key="frame" x="462" y="0.0" width="16" height="406"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
                     </scrollView>

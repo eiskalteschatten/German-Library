@@ -17,6 +17,7 @@
 @property (assign) IBOutlet NSSegmentedControl *tabButtons;
 @property (assign) IBOutlet NSSegmentedControl *backForward;
 @property (assign) IBOutlet NSProgressIndicator *progressIndicator;
+
 @property (assign) IBOutlet NSSearchField *searchField;
 
 @property (assign) IBOutlet WebView *leoView;
@@ -35,7 +36,14 @@
 - (IBAction)goBackForward:(id)sender;
 - (IBAction)stopPage:(id)sender;
 - (IBAction)reloadPage:(id)sender;
+
 - (IBAction)search:(id)sender;
+- (IBAction)searchFromMenu:(id)sender;
+- (void)searchWithString:(NSString*)query;
+- (void)buildSearchMenu;
+- (IBAction)clearSearchMenu:(id)sender;
+
+- (NSString*)pathToOptions;
 - (NSString*)pathToNotes;
 
 @end

@@ -33,6 +33,9 @@
     
     NSString *path = [self pathToNotes];
     [_notePad readRTFDFromFile:path];
+    
+    [_searchField setRecentsAutosaveName:@"recentsearches"];
+    [self buildSearchMenu];
 }
 
 - (IBAction)switchTab:(id)sender {
@@ -87,15 +90,68 @@
 }
 
 - (IBAction)search:(id)sender {
-    NSString *search = [_searchField stringValue];
+    NSString *query = [sender stringValue];
+    [self searchWithString:query];
+}
+
+- (IBAction)searchFromMenu:(id)sender {
+    NSString *query = [sender title];
     
-    if (![search isEqual: @""]) {
+    [_searchField setStringValue:query];
+    
+    [self searchWithString:query];
+}
+
+- (void)searchWithString:(NSString*)query {
+    if (![query isEqual: @""]) {
+        query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        
         WebView *openWebView = [webViews objectAtIndex:_clickedSegment];
         NSString *searchUrl = [searchUrls objectAtIndex:_clickedSegment];
-        searchUrl = [searchUrl stringByAppendingString:search];
+        searchUrl = [searchUrl stringByAppendingString:query];
         
         [[openWebView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:searchUrl]]];
+        
+        [self buildSearchMenu];
+        [_searchField becomeFirstResponder];
     }
+}
+
+- (void)buildSearchMenu {
+    NSArray *searches = [_searchField recentSearches];
+    NSMenu *menu = [[NSMenu alloc] initWithTitle:@"Recent searches"];
+    
+    [menu addItemWithTitle:@"Recent searches" action:nil keyEquivalent:@""];
+    
+    for (NSString* key in searches) {       
+        [menu addItemWithTitle:key action:@selector(searchFromMenu:) keyEquivalent:@""];
+    }
+    
+    [menu insertItem:[NSMenuItem separatorItem] atIndex:[menu numberOfItems]];
+    [menu addItemWithTitle:@"Clear recent searches" action:@selector(clearSearchMenu:) keyEquivalent:@""];
+    
+    [[_searchField cell] setSearchMenuTemplate:menu];
+}
+
+- (IBAction)clearSearchMenu:(id)sender {
+    NSMutableArray *clear = [NSMutableArray arrayWithCapacity:1];
+    [_searchField setRecentSearches:clear];
+    [self buildSearchMenu];
+}
+
+- (NSString*)pathToOptions {
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    NSString *folder2 = @"~/Library/Application Support/Germany Library/Options/";
+    folder2 = [folder2 stringByExpandingTildeInPath];
+    
+    if ([fileManager fileExistsAtPath: folder2] == NO) {
+        [fileManager createDirectoryAtPath: folder2 withIntermediateDirectories: YES attributes: nil error: nil];
+    }
+    
+    folder2 = [folder2 stringByAppendingPathComponent:@"Notepad.rtfd"];
+    
+    return folder2;
 }
 
 - (NSString*)pathToNotes {
