@@ -14,8 +14,10 @@
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTabView *tabView;
 
+@property (assign) IBOutlet NSSegmentedControl *tabButtons;
 @property (assign) IBOutlet NSSegmentedControl *backForward;
 @property (assign) IBOutlet NSProgressIndicator *progressIndicator;
+@property (assign) IBOutlet NSSearchField *searchField;
 
 @property (assign) IBOutlet WebView *leoView;
 @property (assign) IBOutlet WebView *dictView;
@@ -23,9 +25,15 @@
 @property (assign) IBOutlet WebView *dudenView;
 
 @property (assign) NSInteger clickedSegment;
-@property (assign) NSMutableArray *webViews;
+@property (nonatomic,retain) NSMutableArray *refNames;
+@property (nonatomic,retain) NSMutableArray *searchUrls;
+@property (nonatomic,retain) NSMutableArray *webViews;
+@property (nonatomic,retain) NSMutableArray *searchValues;
 
 - (IBAction)switchTab:(id)sender;
 - (IBAction)goBackForward:(id)sender;
+- (IBAction)stopPage:(id)sender;
+- (IBAction)reloadPage:(id)sender;
+- (IBAction)search:(id)sender;
 
 @end

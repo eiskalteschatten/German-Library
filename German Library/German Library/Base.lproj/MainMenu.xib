@@ -291,6 +291,17 @@
                                     <action selector="runToolbarCustomizationPalette:" target="-1" id="365"/>
                                 </connections>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="D10-pi-2R0"/>
+                            <menuItem title="Stop" keyEquivalent="." id="ejS-dI-Yxz">
+                                <connections>
+                                    <action selector="stopPage:" target="494" id="n2u-zS-4gu"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Reload Page" keyEquivalent="r" id="gz7-bz-B7f">
+                                <connections>
+                                    <action selector="reloadPage:" target="494" id="z4h-Bn-kAS"/>
+                                </connections>
+                            </menuItem>
                         </items>
                     </menu>
                 </menuItem>
@@ -479,7 +490,7 @@
                             <action selector="switchTab:" target="494" id="1vO-E3-uTA"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="5B1A245C-632F-44F9-96AF-94B084CCFF81" label="Loading" paletteLabel="Loading" tag="-1" id="yS8-ul-Grs">
+                    <toolbarItem implicitItemIdentifier="5B1A245C-632F-44F9-96AF-94B084CCFF81" label="" paletteLabel="Loading" tag="-1" id="yS8-ul-Grs">
                         <nil key="toolTip"/>
                         <size key="minSize" width="16" height="16"/>
                         <size key="maxSize" width="16" height="16"/>
@@ -488,20 +499,20 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         </progressIndicator>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="C9C585B4-DF32-4E05-BC82-5976B88F1129" label="Back and Forward" paletteLabel="Back and Forward" id="Y5K-KL-3wN">
+                    <toolbarItem implicitItemIdentifier="C9C585B4-DF32-4E05-BC82-5976B88F1129" label="Back/Forward" paletteLabel="Back/Forward" id="Y5K-KL-3wN">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="42" height="26"/>
+                        <size key="minSize" width="14" height="26"/>
                         <size key="maxSize" width="104" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="eFF-dc-JeZ">
-                            <rect key="frame" x="24" y="14" width="54" height="26"/>
+                            <rect key="frame" x="15" y="14" width="52" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="momentary" id="i3U-QX-GoC">
+                            <segmentedCell key="cell" lineBreakMode="truncatingTail" alignment="left" style="texturedRounded" trackingMode="momentary" id="i3U-QX-GoC">
                                 <font key="font" metaFont="system"/>
                                 <segments>
-                                    <segment image="NSGoLeftTemplate" width="24" enabled="NO">
+                                    <segment image="NSGoLeftTemplate" width="23" enabled="NO">
                                         <nil key="label"/>
                                     </segment>
-                                    <segment image="NSGoRightTemplate" width="23" enabled="NO" tag="1">
+                                    <segment image="NSGoRightTemplate" width="22" enabled="NO" tag="1">
                                         <nil key="label"/>
                                     </segment>
                                 </segments>
@@ -511,15 +522,34 @@
                             </connections>
                         </segmentedControl>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="1D25405E-F8BB-4E13-9339-4D6B1A3EE32B" label="Search LEO" paletteLabel="Search LEO" id="b29-Y3-Dnq">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="220" height="22"/>
+                        <searchField key="view" verticalHuggingPriority="750" id="pnM-Cq-Jsv">
+                            <rect key="frame" x="0.0" y="14" width="203" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Search LEO" usesSingleLineMode="YES" bezelStyle="round" id="ZJ7-HX-JWt">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                        <connections>
+                            <action selector="search:" target="494" id="ZfN-BH-tWq"/>
+                        </connections>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="Y5K-KL-3wN"/>
-                    <toolbarItem reference="av8-gY-ao6"/>
-                    <toolbarItem reference="tLE-FV-Mxa"/>
+                    <toolbarItem reference="ZE8-vc-9YY"/>
+                    <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="av8-gY-ao6"/>
-                    <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="yS8-ul-Grs"/>
+                    <toolbarItem reference="tLE-FV-Mxa"/>
+                    <toolbarItem reference="av8-gY-ao6"/>
+                    <toolbarItem reference="b29-Y3-Dnq"/>
                 </defaultToolbarItems>
             </toolbar>
         </window>
@@ -531,6 +561,8 @@
                 <outlet property="dudenView" destination="jgT-8B-Jr4" id="qwU-qd-Jd1"/>
                 <outlet property="leoView" destination="E5X-Fq-Lz4" id="eTo-oC-Kq6"/>
                 <outlet property="progressIndicator" destination="LR0-ev-w2Z" id="4G3-aS-toc"/>
+                <outlet property="searchField" destination="pnM-Cq-Jsv" id="geS-so-rKB"/>
+                <outlet property="tabButtons" destination="Xi5-nd-ovX" id="8eT-3t-T6O"/>
                 <outlet property="tabView" destination="XqY-9p-FEz" id="nhA-zY-GPM"/>
                 <outlet property="window" destination="371" id="532"/>
             </connections>
