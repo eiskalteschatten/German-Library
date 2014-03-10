@@ -15,7 +15,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     _clickedSegment = 0;
-    [_tabView selectTabViewItemAtIndex:0];
+    [_tabView selectTabViewItemAtIndex:_clickedSegment];
     
     [[_leoView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dict.leo.org"]]];
     [[_dictView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.dict.cc"]]];
@@ -23,7 +23,7 @@
     [[_dudenView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.duden.de"]]];
     
     refNames = [[NSMutableArray alloc] init];
-    [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"canoonet",@"Duden", nil]];
+    [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"CanooNet",@"Duden", nil]];
     
     searchUrls = [[NSMutableArray alloc] init];
     [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"http://dict.leo.org/#/search=",@"http://www.dict.cc/?s=",@"http://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"http://www.duden.de/suchen/dudenonline/", nil]];
@@ -86,7 +86,7 @@
 - (IBAction)search:(id)sender {
     NSString *search = [_searchField stringValue];
     
-    if (![search  isEqual: @""]) {
+    if (![search isEqual: @""]) {
         WebView *openWebView = [webViews objectAtIndex:_clickedSegment];
         NSString *searchUrl = [searchUrls objectAtIndex:_clickedSegment];
         searchUrl = [searchUrl stringByAppendingString:search];

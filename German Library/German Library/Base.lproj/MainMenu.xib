@@ -348,23 +348,23 @@
             <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1178"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView misplaced="YES" type="noTabsNoBorder" initialItem="Oy3-DI-ARC" translatesAutoresizingMaskIntoConstraints="NO" id="XqY-9p-FEz">
-                        <rect key="frame" x="25" y="26" width="431" height="328"/>
+                        <rect key="frame" x="18" y="16" width="445" height="344"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="LEO" identifier="1" id="Oy3-DI-ARC">
                                 <view key="view" id="CPF-SZ-8Ox">
-                                    <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="431" height="328"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5X-Fq-Lz4">
-                                            <rect key="frame" x="61" y="54" width="308" height="262"/>
+                                            <rect key="frame" x="66" y="52" width="308" height="262"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" plugInsEnabled="NO" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO">
                                                 <nil key="identifier"/>
@@ -407,9 +407,9 @@
                                     </constraints>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="canoonet" identifier="2" id="s9g-cc-oEL">
+                            <tabViewItem label="CanooNet" identifier="2" id="s9g-cc-oEL">
                                 <view key="view" id="g8G-pY-srN">
-                                    <rect key="frame" x="10" y="33" width="411" height="282"/>
+                                    <rect key="frame" x="10" y="33" width="425" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <webView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bR-bz-4U4">
@@ -474,14 +474,14 @@
                         <size key="minSize" width="104" height="28"/>
                         <size key="maxSize" width="285" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="Xi5-nd-ovX">
-                            <rect key="frame" x="0.0" y="14" width="254" height="28"/>
+                            <rect key="frame" x="0.0" y="14" width="258" height="28"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <segmentedCell key="cell" alignment="left" style="texturedRounded" trackingMode="selectOne" id="tmu-RU-X7r">
                                 <font key="font" metaFont="system"/>
                                 <segments>
                                     <segment label="LEO" selected="YES"/>
                                     <segment label="dict.cc" tag="1"/>
-                                    <segment label="canoonet"/>
+                                    <segment label="CanooNet"/>
                                     <segment label="Duden"/>
                                 </segments>
                             </segmentedCell>
