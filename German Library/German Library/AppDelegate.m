@@ -139,6 +139,10 @@
     [self buildSearchMenu];
 }
 
+- (IBAction)focusSearch:(id)sender {
+    [_searchField becomeFirstResponder];
+}
+
 - (NSString*)pathToOptions {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     

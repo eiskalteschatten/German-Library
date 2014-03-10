@@ -62,6 +62,12 @@
                 <menuItem title="File" id="83">
                     <menu key="submenu" title="File" id="81">
                         <items>
+                            <menuItem title="Search" keyEquivalent="s" id="W2W-U9-TSw">
+                                <connections>
+                                    <action selector="focusSearch:" target="494" id="1pr-1s-LDA"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="1wm-vq-evT"/>
                             <menuItem title="Close" keyEquivalent="w" id="73">
                                 <connections>
                                     <action selector="performClose:" target="-1" id="193"/>

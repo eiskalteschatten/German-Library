@@ -42,6 +42,7 @@
 - (void)searchWithString:(NSString*)query;
 - (void)buildSearchMenu;
 - (IBAction)clearSearchMenu:(id)sender;
+- (IBAction)focusSearch:(id)sender;
 
 - (NSString*)pathToOptions;
 - (NSString*)pathToNotes;
