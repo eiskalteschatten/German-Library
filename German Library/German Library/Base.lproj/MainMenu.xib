@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="3338"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5053"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="5053"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -789,7 +789,7 @@
                     <toolbarItem implicitItemIdentifier="C9C585B4-DF32-4E05-BC82-5976B88F1129" label="Back/Forward" paletteLabel="Back/Forward" id="Y5K-KL-3wN">
                         <nil key="toolTip"/>
                         <size key="minSize" width="14" height="26"/>
-                        <size key="maxSize" width="104" height="28"/>
+                        <size key="maxSize" width="52" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="eFF-dc-JeZ">
                             <rect key="frame" x="15" y="14" width="52" height="26"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -829,11 +829,11 @@
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="Y5K-KL-3wN"/>
+                    <toolbarItem reference="yS8-ul-Grs"/>
                     <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="ZE8-vc-9YY"/>
                     <toolbarItem reference="av8-gY-ao6"/>
-                    <toolbarItem reference="yS8-ul-Grs"/>
                     <toolbarItem reference="tLE-FV-Mxa"/>
                     <toolbarItem reference="av8-gY-ao6"/>
                     <toolbarItem reference="b29-Y3-Dnq"/>
