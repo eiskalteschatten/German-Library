@@ -758,7 +758,7 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="av8-gY-ao6"/>
                     <toolbarItem implicitItemIdentifier="C6669A7E-2703-4ED6-8321-EE11736114AD" label="Reference" paletteLabel="Reference" id="tLE-FV-Mxa">
                         <nil key="toolTip"/>
-                        <size key="minSize" width="104" height="28"/>
+                        <size key="minSize" width="258" height="28"/>
                         <size key="maxSize" width="285" height="28"/>
                         <segmentedControl key="view" verticalHuggingPriority="750" id="Xi5-nd-ovX">
                             <rect key="frame" x="0.0" y="14" width="258" height="28"/>

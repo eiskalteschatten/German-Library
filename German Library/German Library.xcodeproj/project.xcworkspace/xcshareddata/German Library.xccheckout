@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CBD3D7E3-B39E-4C34-8746-79379B48BE57</string>
+	<key>IDESourceControlProjectName</key>
+	<string>German Library</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</key>
+		<string>https://github.com/eiskalteschatten/German-Library.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>German Library/German Library.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/eiskalteschatten/German-Library.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>German Library</string>
+		</dict>
+	</array>
+</dict>
+</plist>
