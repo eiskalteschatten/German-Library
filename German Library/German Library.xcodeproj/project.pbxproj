@@ -22,6 +22,7 @@
 		933F1DF118CE551500251ADD /* NotepadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F1DF018CE551500251ADD /* NotepadViewController.m */; };
 		9351CE43192814EB00AA4DF0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9351CE42192814EB00AA4DF0 /* Sparkle.framework */; };
 		9351CE45192815A700AA4DF0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9351CE42192814EB00AA4DF0 /* Sparkle.framework */; };
+		9351CE4D192817C000AA4DF0 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 9351CE4C192817C000AA4DF0 /* dsa_pub.pem */; };
 		936A6F5418CCDCC0002D0EC7 /* LeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */; };
 		936A6F5718CCDD89002D0EC7 /* DictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5618CCDD89002D0EC7 /* DictViewController.m */; };
 		936A6F5A18CCDDC0002D0EC7 /* CanooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5918CCDDC0002D0EC7 /* CanooViewController.m */; };
@@ -76,6 +77,7 @@
 		933F1DEF18CE551500251ADD /* NotepadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotepadViewController.h; sourceTree = "<group>"; };
 		933F1DF018CE551500251ADD /* NotepadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotepadViewController.m; sourceTree = "<group>"; };
 		9351CE42192814EB00AA4DF0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		9351CE4C192817C000AA4DF0 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		936A6F5218CCDCC0002D0EC7 /* LeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeoViewController.h; sourceTree = "<group>"; };
 		936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeoViewController.m; sourceTree = "<group>"; };
 		936A6F5518CCDD89002D0EC7 /* DictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictViewController.h; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		9338C48218CCB17400AE3FEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9351CE4C192817C000AA4DF0 /* dsa_pub.pem */,
 				9338C48318CCB17400AE3FEA /* German Library-Info.plist */,
 				9338C48418CCB17400AE3FEA /* InfoPlist.strings */,
 				9338C48718CCB17400AE3FEA /* main.m */,
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9351CE4D192817C000AA4DF0 /* dsa_pub.pem in Resources */,
 				9338C48618CCB17400AE3FEA /* InfoPlist.strings in Resources */,
 				9338C49418CCB17400AE3FEA /* Images.xcassets in Resources */,
 				9338C48C18CCB17400AE3FEA /* Credits.rtf in Resources */,
