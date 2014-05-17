@@ -20,6 +20,8 @@
 		9338C4A618CCB17400AE3FEA /* German_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338C4A518CCB17400AE3FEA /* German_LibraryTests.m */; };
 		9338C4B018CCB2AE00AE3FEA /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */; };
 		933F1DF118CE551500251ADD /* NotepadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933F1DF018CE551500251ADD /* NotepadViewController.m */; };
+		9351CE43192814EB00AA4DF0 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9351CE42192814EB00AA4DF0 /* Sparkle.framework */; };
+		9351CE45192815A700AA4DF0 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9351CE42192814EB00AA4DF0 /* Sparkle.framework */; };
 		936A6F5418CCDCC0002D0EC7 /* LeoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */; };
 		936A6F5718CCDD89002D0EC7 /* DictViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5618CCDD89002D0EC7 /* DictViewController.m */; };
 		936A6F5A18CCDDC0002D0EC7 /* CanooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936A6F5918CCDDC0002D0EC7 /* CanooViewController.m */; };
@@ -36,6 +38,19 @@
 			remoteInfo = "German Library";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9351CE441928159500AA4DF0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9351CE45192815A700AA4DF0 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9338C47818CCB17400AE3FEA /* German Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "German Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +75,7 @@
 		9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		933F1DEF18CE551500251ADD /* NotepadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotepadViewController.h; sourceTree = "<group>"; };
 		933F1DF018CE551500251ADD /* NotepadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotepadViewController.m; sourceTree = "<group>"; };
+		9351CE42192814EB00AA4DF0 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		936A6F5218CCDCC0002D0EC7 /* LeoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeoViewController.h; sourceTree = "<group>"; };
 		936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeoViewController.m; sourceTree = "<group>"; };
 		936A6F5518CCDD89002D0EC7 /* DictViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictViewController.h; sourceTree = "<group>"; };
@@ -78,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9338C4B018CCB2AE00AE3FEA /* WebKit.framework in Frameworks */,
+				9351CE43192814EB00AA4DF0 /* Sparkle.framework in Frameworks */,
 				9338C47C18CCB17400AE3FEA /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +133,7 @@
 		9338C47A18CCB17400AE3FEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9351CE42192814EB00AA4DF0 /* Sparkle.framework */,
 				9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */,
 				9338C47B18CCB17400AE3FEA /* Cocoa.framework */,
 				9338C49A18CCB17400AE3FEA /* XCTest.framework */,
@@ -214,6 +232,7 @@
 				9338C47418CCB17400AE3FEA /* Sources */,
 				9338C47518CCB17400AE3FEA /* Frameworks */,
 				9338C47618CCB17400AE3FEA /* Resources */,
+				9351CE441928159500AA4DF0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -440,6 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "German Library/German Library-Prefix.pch";
 				INFOPLIST_FILE = "German Library/German Library-Info.plist";
@@ -453,6 +476,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "German Library/German Library-Prefix.pch";
 				INFOPLIST_FILE = "German Library/German Library-Info.plist";
