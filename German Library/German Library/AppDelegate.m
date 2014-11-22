@@ -14,6 +14,8 @@
 @synthesize searchUrls;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    _window.titleVisibility = NSWindowTitleHidden;
+    
     _clickedSegment = 0;
     [_tabView selectTabViewItemAtIndex:_clickedSegment];
     
@@ -21,15 +23,16 @@
     [[_dictView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.dict.cc"]]];
     [[_canooView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.canoo.net"]]];
     [[_dudenView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.duden.de"]]];
+    [[_ponsView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.pons.com"]]];
     
     refNames = [[NSMutableArray alloc] init];
-    [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"CanooNet",@"Duden", nil]];
+    [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"CanooNet",@"Duden",@"PONS", nil]];
     
     searchUrls = [[NSMutableArray alloc] init];
-    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"http://dict.leo.org/#/search=",@"http://www.dict.cc/?s=",@"http://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"http://www.duden.de/suchen/dudenonline/", nil]];
+    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"http://dict.leo.org/#/search=",@"http://www.dict.cc/?s=",@"http://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"http://www.duden.de/suchen/dudenonline/",@"http://en.pons.com/translate?l=deen&in=&lf=de&q=", nil]];
     
     webViews = [[NSMutableArray alloc] init];
-    [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, nil]];
+    [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, _ponsView, nil]];
     
     NSString *path = [self pathToNotes];
     [_notePad readRTFDFromFile:path];

@@ -10,31 +10,31 @@
 	<string>German Library</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</key>
+		<key>BA2BEA5E1AB057A70A2CB717F30A200734A4D41D</key>
 		<string>https://github.com/eiskalteschatten/German-Library.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>German Library/German Library.xcodeproj/project.xcworkspace</string>
+	<string>German Library/German Library.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</key>
+		<key>BA2BEA5E1AB057A70A2CB717F30A200734A4D41D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/eiskalteschatten/German-Library.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</string>
+	<string>BA2BEA5E1AB057A70A2CB717F30A200734A4D41D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CC89F848-AD80-4227-ADFC-B3AF63DAC21D</string>
+			<string>BA2BEA5E1AB057A70A2CB717F30A200734A4D41D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>German Library</string>
+			<string>German%20Library</string>
 		</dict>
 	</array>
 </dict>

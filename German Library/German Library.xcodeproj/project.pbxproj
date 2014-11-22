@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933576781A20F1D0008C785B /* PonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933576771A20F1D0008C785B /* PonsViewController.m */; };
 		9338C47C18CCB17400AE3FEA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9338C47B18CCB17400AE3FEA /* Cocoa.framework */; };
 		9338C48618CCB17400AE3FEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9338C48418CCB17400AE3FEA /* InfoPlist.strings */; };
 		9338C48818CCB17400AE3FEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338C48718CCB17400AE3FEA /* main.m */; };
@@ -14,7 +15,6 @@
 		9338C48F18CCB17400AE3FEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338C48E18CCB17400AE3FEA /* AppDelegate.m */; };
 		9338C49218CCB17400AE3FEA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9338C49018CCB17400AE3FEA /* MainMenu.xib */; };
 		9338C49418CCB17400AE3FEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9338C49318CCB17400AE3FEA /* Images.xcassets */; };
-		9338C49B18CCB17400AE3FEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9338C49A18CCB17400AE3FEA /* XCTest.framework */; };
 		9338C49C18CCB17400AE3FEA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9338C47B18CCB17400AE3FEA /* Cocoa.framework */; };
 		9338C4A418CCB17400AE3FEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9338C4A218CCB17400AE3FEA /* InfoPlist.strings */; };
 		9338C4A618CCB17400AE3FEA /* German_LibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338C4A518CCB17400AE3FEA /* German_LibraryTests.m */; };
@@ -54,6 +54,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		933576761A20F1D0008C785B /* PonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonsViewController.h; sourceTree = "<group>"; };
+		933576771A20F1D0008C785B /* PonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonsViewController.m; sourceTree = "<group>"; };
 		9338C47818CCB17400AE3FEA /* German Library.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "German Library.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9338C47B18CCB17400AE3FEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		9338C47E18CCB17400AE3FEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -69,7 +71,6 @@
 		9338C49118CCB17400AE3FEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		9338C49318CCB17400AE3FEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9338C49918CCB17400AE3FEA /* German LibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "German LibraryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9338C49A18CCB17400AE3FEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9338C4A118CCB17400AE3FEA /* German LibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "German LibraryTests-Info.plist"; sourceTree = "<group>"; };
 		9338C4A318CCB17400AE3FEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9338C4A518CCB17400AE3FEA /* German_LibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = German_LibraryTests.m; sourceTree = "<group>"; };
@@ -106,7 +107,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9338C49C18CCB17400AE3FEA /* Cocoa.framework in Frameworks */,
-				9338C49B18CCB17400AE3FEA /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,6 @@
 				9351CE42192814EB00AA4DF0 /* Sparkle.framework */,
 				9338C4AF18CCB2AE00AE3FEA /* WebKit.framework */,
 				9338C47B18CCB17400AE3FEA /* Cocoa.framework */,
-				9338C49A18CCB17400AE3FEA /* XCTest.framework */,
 				9338C47D18CCB17400AE3FEA /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -202,6 +201,8 @@
 		933F1DF218CE5CE800251ADD /* WebView Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				933576761A20F1D0008C785B /* PonsViewController.h */,
+				933576771A20F1D0008C785B /* PonsViewController.m */,
 				936A6F5218CCDCC0002D0EC7 /* LeoViewController.h */,
 				936A6F5318CCDCC0002D0EC7 /* LeoViewController.m */,
 				936A6F5518CCDD89002D0EC7 /* DictViewController.h */,
@@ -333,6 +334,7 @@
 				936A6F5718CCDD89002D0EC7 /* DictViewController.m in Sources */,
 				933F1DF118CE551500251ADD /* NotepadViewController.m in Sources */,
 				9338C48818CCB17400AE3FEA /* main.m in Sources */,
+				933576781A20F1D0008C785B /* PonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

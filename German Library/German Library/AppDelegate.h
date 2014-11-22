@@ -24,6 +24,7 @@
 @property (assign) IBOutlet WebView *dictView;
 @property (assign) IBOutlet WebView *canooView;
 @property (assign) IBOutlet WebView *dudenView;
+@property (assign) IBOutlet WebView *ponsView;
 
 @property (assign) NSInteger clickedSegment;
 @property (nonatomic,retain) NSMutableArray *refNames;
