@@ -19,17 +19,17 @@
     _clickedSegment = 0;
     [_tabView selectTabViewItemAtIndex:_clickedSegment];
     
-    [[_leoView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://dict.leo.org"]]];
-    [[_dictView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.dict.cc"]]];
-    [[_canooView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.canoo.net"]]];
-    [[_dudenView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.duden.de"]]];
-    [[_ponsView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.pons.com"]]];
+    [[_leoView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://dict.leo.org"]]];
+    [[_dictView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.dict.cc"]]];
+    [[_canooView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.canoo.net"]]];
+    [[_dudenView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.duden.de"]]];
+    [[_ponsView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.pons.com"]]];
     
     refNames = [[NSMutableArray alloc] init];
     [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"CanooNet",@"Duden",@"PONS", nil]];
     
     searchUrls = [[NSMutableArray alloc] init];
-    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"http://dict.leo.org/#/search=",@"http://www.dict.cc/?s=",@"http://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"http://www.duden.de/suchen/dudenonline/",@"http://en.pons.com/translate?l=deen&in=&lf=de&q=", nil]];
+    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"https://dict.leo.org/#/search=",@"https://www.dict.cc/?s=",@"https://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"https://www.duden.de/suchen/dudenonline/",@"https://en.pons.com/translate?l=deen&in=&lf=de&q=", nil]];
     
     webViews = [[NSMutableArray alloc] init];
     [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, _ponsView, nil]];
