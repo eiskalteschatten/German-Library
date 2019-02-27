@@ -29,7 +29,7 @@
     [refNames addObjectsFromArray:[NSArray arrayWithObjects:@"LEO",@"dict.cc",@"CanooNet",@"Duden",@"PONS", nil]];
     
     searchUrls = [[NSMutableArray alloc] init];
-    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"https://dict.leo.org/#/search=",@"https://www.dict.cc/?s=",@"https://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"https://www.duden.de/suchen/dudenonline/",@"https://en.pons.com/translate?l=deen&in=&lf=de&q=", nil]];
+    [searchUrls addObjectsFromArray:[NSArray arrayWithObjects:@"https://dict.leo.org/german-english/",@"https://www.dict.cc/?s=",@"https://canoo.net/services/Controller?MenuId=Search&service=canooNet&lang=de&input=",@"https://www.duden.de/suchen/dudenonline/",@"https://en.pons.com/translate?l=deen&in=&lf=de&q=", nil]];
     
     webViews = [[NSMutableArray alloc] init];
     [webViews addObjectsFromArray:[NSArray arrayWithObjects:_leoView, _dictView, _canooView, _dudenView, _ponsView, nil]];
